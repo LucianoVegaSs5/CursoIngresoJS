@@ -16,5 +16,32 @@ function mostrar()
 	alert("Usted se llama " + nombre + " y tiene " + edad + " años");
 }
 
+/*
+Esteban Marcelo
+E/S ej 5 bis
+Debemos lograr tomar apellido, nombre(separados) 
+y edad por prompt y mostrarlos concatenados 
+por alert.
+ej.: "Usted se llama José y tiene 66 años" */
+ /*function mostrar()
+{	
+	//declaramos variables
+	let nombreIngresado;
+	let apellido;
+	let edad;
+
+	//tomo los datos
+	apellido = prompt("ingrese su apellido");
+	nombreIngresado = prompt("ingrese su nombre");
+	edad = prompt("ingrese su edad");
+
+
+	//mostrarlo por alert
+	alert ("su apellido y nombre es: " + apellido + " " + nombreIngresado +" y su edad es: " + edad + " años");
+
+}
+
+
 //txtIdNombre
 //txtIdEdad
+

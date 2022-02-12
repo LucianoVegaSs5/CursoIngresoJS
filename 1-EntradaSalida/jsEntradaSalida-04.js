@@ -17,4 +17,6 @@ function mostrar()
 }
 
 //txtIdNombre
-
+/* salida:
+-id 
+*/

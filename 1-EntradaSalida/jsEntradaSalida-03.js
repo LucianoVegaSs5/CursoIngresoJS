@@ -8,8 +8,8 @@ function mostrar()
 	var nombreIngresado;
 
 	//guardamos variable
-	//nombreIngresado = document.getElementById("txtIdNombre").value;
-	nombreIngresado = txtIdNombre.value;
+	nombreIngresado = document.getElementById("txtIdNombre").value;
+	//nombreIngresado = txtIdNombre.value;
 
 	//mostrarlo por alert
 	alert("Su nombre es " + nombreIngresado);
@@ -19,6 +19,7 @@ function mostrar()
 
 
 // txtIdNombre
+// .value : El valor de la caja de texto
 /*
 entrada:
 -prompt
