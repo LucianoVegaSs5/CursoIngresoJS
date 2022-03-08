@@ -16,4 +16,4 @@ function mostrar()
 }//FIN DE LA FUNCIÓN
 
 // generar un numero ramdon
-// math.floor(Math.random() * (max(+1) - min) + min (o 1))
+// Math.floor(Math.random() * max) + min
