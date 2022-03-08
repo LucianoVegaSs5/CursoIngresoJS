@@ -1,5 +1,6 @@
 /*
 Luciano Rafael Vega Luna DIV E
+Tp Nro 4
 1.	Para el departamento de facturación:
 A.	Ingresar tres precios de productos y mostrar la suma de los mismos.
 B.	Ingresar tres precios de productos y mostrar el promedio de los mismos.
@@ -63,8 +64,6 @@ function PrecioFinal ()
     precioTres = parseFloat(precioTres);
 
     precioFinal = precioUno + precioDos + precioTres;
-    precioFinal = parseFloat(precioFinal);
-
     precioFinalIva = precioFinal + precioFinal * 21/100;
 
 	alert("El precio final más el IVA es " + precioFinalIva)

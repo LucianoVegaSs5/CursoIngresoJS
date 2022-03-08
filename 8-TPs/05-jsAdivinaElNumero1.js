@@ -11,44 +11,44 @@ de no ser igual se debe informar si “falta…”  para llegar al número secre
 	var numeroSecreto;
 	var numeroIntentos;
 	var numeroIngresado;
-	var diferencia;
 
 function comenzar()
 {
 
-	numeroSecreto = Math.floor(Math.random() * 100) + 1 
-	alert(numeroSecreto );
-	
-
+	numeroSecreto = Math.floor(Math.random() * 100) + 1;
+	alert("El juego comenzó! Tienes que adivinar el numero");
 }
 
 function verificar()
 {
 	numeroIntentos = 0;
-	numeroIngresado = document.getElementById("txtIdNumero").value;
-	numeroIngresado = parseInt(numeroIngresado);
-
-	if(numeroIngresado == numeroSecreto)
-	{
-		alert("Usted es un ganador!!! y en solo " + numeroIntentos + " intentos.");
-	}
-	else if(numeroIngresado > numeroSecreto) 
-	{
-		diferencia = numeroIngresado - numeroSecreto;
-		alert("Se paso por "+ diferencia + " número/s.");
-	}
-	else
-	{
-		diferencia = numeroSecreto - numeroIngresado;
-		alert("faltan "+ diferencia + " numero/s.");
-	}
 
 	while(numeroIngresado != numeroSecreto)
 	{
-		numeroIntentos =  numeroIntentos + 1;
+		if(numeroIngresado > numeroSecreto)
+		{
+			alert("se pasó...");
+		}
+		if(numeroIngresado < numeroSecreto)
+		{
+			alert("falta...");
 	}
-	document.getElementById("txtIdIntentos").value = numeroIntentos;
+ 
+		numeroIntentos = numeroIntentos + 1;
 
+		numeroIngresado = prompt("Pruebe de nuevo");
+		numeroIngresado = parseInt(numeroIngresado);
+
+	}
+
+	if(numeroIngresado == numeroSecreto);
+	{
+		alert("Usted es ganador!!! y tan solo en " + numeroIntentos + " intentos!.");
+	}	
+
+	document.getElementById("txtIdNumero").value = numeroIngresado;
+
+	document.getElementById("txtIdIntentos").value = numeroIntentos;
 
 }
 

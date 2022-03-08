@@ -21,7 +21,7 @@ function Rectangulo ()
 
     //hacemos la formula
     // formula del perimetro de un rectangulo= b2+h2
-	perimetro = ancho *2 + largo*2;
+	perimetro = ancho * 2 + largo * 2;
     alambre = perimetro * 3;
 
     //mostramos el mensaje por el alert
